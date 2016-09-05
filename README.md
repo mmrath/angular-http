@@ -1,6 +1,8 @@
 # Angular 2 HTTP Utilities
 
-This is the home of angular2 http utilities
+This is the home of angular2 http
+
+[![Build Status](https://travis-ci.org/angular-util/http.svg?branch=master)](https://travis-ci.org/angular-util/http)
 
 ## Getting started
 
