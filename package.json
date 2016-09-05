@@ -1,0 +1,66 @@
+{
+  "name": "@angular-util/http",
+  "version": "0.1.0",
+  "description": "Http Utilities Angular2 apps",
+  "main": "./index.js",
+  "scripts": {
+    "clean": "rimraf node_modules dist tmp npm-debug.log && npm cache clean",
+    "clean:test": "rimraf tmp",
+    "clean:dist": "rimraf dist",
+    "build:dist": "npm run clean:dist && ngc && cp package.json dist/package.json",
+    "lint": "tslint src/**.ts",
+    "test": "tsc -p spec && jasmine && npm run clean:test",
+    "test:ngc": "ngc -p spec/tsconfig.ngc.json",
+    "prepublish:dist": "npm run build:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular-util/http.git"
+  },
+  "keywords": [
+    "Http",
+    "Interceptor",
+    "Angular2",
+    "Angular 2",
+    "REST",
+    "Resource",
+    "Util",
+    "Utility"
+  ],
+  "author": "Murali Rath <mmrath@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular-util/http/issues"
+  },
+  "homepage": "https://github.com/angular-util/http#readme",
+  "devDependencies": {
+    "@angular/common": "^2.0.0-rc.6",
+    "@angular/compiler": "^2.0.0-rc.6",
+    "@angular/compiler-cli": "^0.5.0",
+    "@angular/core": "^2.0.0-rc.6",
+    "@angular/http": "^2.0.0-rc.6",
+    "@angular/platform-browser": "^2.0.0-rc.6",
+    "@angular/platform-server": "^2.0.0-rc.6",
+    "@angular/tsc-wrapped": "^0.2.2",
+    "@types/jasmine": "^2.2.31",
+    "@types/node": "^6.0.33",
+    "core-js": "^2.4.1",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.35.0",
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "lodash": "^3.10.1",
+    "reflect-metadata": "0.1.2",
+    "rimraf": "^2.5.2",
+    "rxjs": "^5.0.0-beta.11",
+    "tslint": "^3.4.0",
+    "typescript": "^2.0.2",
+    "zone.js": "^0.6.12"
+  },
+  "peerDependencies": {
+    "rxjs": "^5.0.0-beta.11",
+    "@angular/core": "^2.0.0-rc.6",
+    "@angular/http": "^2.0.0-rc.6"
+  },
+  "typings": "./index.d.ts"
+}
