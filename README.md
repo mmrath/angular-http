@@ -1,6 +1,6 @@
 # Angular 2 HTTP Utilities
 
-This is the home of angular2 http
+This is the home of angular2 http, a collection of utility classes for http related services. All of these services are collected from different open source projects
 
 [![Build Status](https://travis-ci.org/angular-util/http.svg?branch=master)](https://travis-ci.org/angular-util/http)
 

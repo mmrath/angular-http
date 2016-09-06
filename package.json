@@ -7,7 +7,7 @@
     "clean": "rimraf node_modules dist tmp npm-debug.log && npm cache clean",
     "clean:test": "rimraf tmp",
     "clean:dist": "rimraf dist",
-    "build:dist": "tslint src/**.ts && npm run clean:dist && ngc && cp package.json dist/package.json",
+    "build:dist": "tslint src/**.ts && npm run clean:dist && ngc && cp package.json dist/package.json && cp README.md dist/",
     "lint": "tslint src/**.ts",
     "test": "tsc -p spec && jasmine && npm run clean:test",
     "test:ngc": "ngc -p spec/tsconfig.ngc.json",
